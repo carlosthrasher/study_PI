@@ -5,24 +5,24 @@ const User = mongoose.model(
   "User",
   new Schema(
     {
-      tarefas: {
+      name: {
         type: String,
         required: true,
       },
-      dificuldade: {
+      email: {
         type: String,
         required: true,
       },
-      horasDisponiveis: {
-        type: Number,
+      phone: {
+        type: String,
         required: true,
       },
-      status: {
-        type: Boolean,
+      password: {
+        type: String,
+        required: true,
       },
-      user: Object,
     },
-    //cria duas colunas/collections no banco para data de criação e atualização
+    //cria duas colunas/collections no banco 
     { timestamps: true }
   )
 )
